@@ -12,5 +12,7 @@ assets/mark.svg
 edge-client.js
 edge-client.json
 index.html
+install
+install.ps1
 manifest.webmanifest
 portal/index.html

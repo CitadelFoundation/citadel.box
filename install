@@ -1,0 +1,2 @@
+#!/bin/sh
+printf '%s\n' 'GM' 'This does not install Box.' 'This does not start sign-in.' 'This does not access a private payload.'
