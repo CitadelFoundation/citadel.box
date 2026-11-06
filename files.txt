@@ -1,0 +1,16 @@
+app.css
+app.js
+assets/ARTWORK.md
+assets/citadel-landscape.webp
+assets/instrument-serif-LICENSE.txt
+assets/instrument-serif-italic.ttf
+assets/instrument-serif.ttf
+assets/manrope-LICENSE.txt
+assets/manrope-regular.ttf
+assets/manrope-semibold.ttf
+assets/mark.svg
+edge-client.js
+edge-client.json
+index.html
+manifest.webmanifest
+portal/index.html
