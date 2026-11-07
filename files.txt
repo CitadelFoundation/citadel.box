@@ -15,4 +15,5 @@ index.html
 install
 install.ps1
 manifest.webmanifest
+portal/access.js
 portal/index.html
