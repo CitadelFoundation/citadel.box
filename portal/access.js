@@ -55,19 +55,19 @@ export function serviceFailure(httpStatus, data) {
 
 export function loadGsi(document) {
   return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[src="${GSI_SRC}"]`)
+    let script = document.querySelector(`script[src="${GSI_SRC}"]`)
     const done = () => {
       const google = globalThis.google
-      if (google?.accounts?.id) { existing.dataset.loaded = "true"; resolve(google) }
+      if (google?.accounts?.id) { script.dataset.loaded = "true"; resolve(google) }
       else reject(new IdentityError("Google sign-in could not be loaded in this browser."))
     }
-    if (existing) {
-      if (existing.dataset.loaded === "true" && globalThis.google?.accounts?.id) return resolve(globalThis.google)
-      existing.addEventListener("load", done)
-      existing.addEventListener("error", () => reject(new IdentityError("Google sign-in could not be loaded in this browser.")))
+    if (script) {
+      if (script.dataset.loaded === "true" && globalThis.google?.accounts?.id) return resolve(globalThis.google)
+      script.addEventListener("load", done)
+      script.addEventListener("error", () => reject(new IdentityError("Google sign-in could not be loaded in this browser.")))
       return
     }
-    const script = document.createElement("script")
+    script = document.createElement("script")
     script.src = GSI_SRC
     script.async = true
     script.addEventListener("load", done)
