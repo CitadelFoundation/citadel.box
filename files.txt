@@ -17,3 +17,4 @@ install.ps1
 manifest.webmanifest
 portal/access.js
 portal/index.html
+portal/portal.css
