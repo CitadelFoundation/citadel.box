@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "Citadel — Your AI, your keys.",
+  "short_name": "Citadel",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "lang": "en",
+  "theme_color": "#f5f3eb",
+  "background_color": "#f5f3eb",
+  "icons": [
+    {
+      "src": "/assets/mark.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}
