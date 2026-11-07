@@ -185,7 +185,7 @@ export function createBetaAccessClient({ document, location, fetch: fetchImpl, s
       }
       let uri
       try { uri = new URL(r.data.verificationUri) } catch { uri = null }
-      if (!uri || uri.protocol !== "https:") { failed("GitHub sign-in returned an invalid address. Access has not been confirmed."); return }
+      if (!uri || uri.protocol !== "https:") { failed("GitHub sign-in returned an address this page cannot use. Access has not been confirmed."); return }
       deviceCode = r.data.deviceCode
       pollDeadline = now() + (r.data.expiresInSeconds || 300) * 1000
       device.hidden = false
